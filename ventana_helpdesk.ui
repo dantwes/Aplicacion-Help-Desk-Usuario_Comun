@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>161</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">border-color: rgb(85, 85, 255);
+color: rgb(85, 85, 255);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="btn_menu_redes">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>161</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>REDES</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_menu_monitoreo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>161</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Monitoreo</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_menu_sensores">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>530</y>
+         <width>161</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Sensores</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_menu_info">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>330</y>
+         <width>161</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Informacion de la PC</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStackedWidget" name="paginas_contenido">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>10</y>
+     <width>391</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QPushButton" name="btn_action_ip">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>160</y>
+       <width>241</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>IP config</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_action_tracert">
+     <property name="geometry">
+      <rect>
+       <x>192</x>
+       <y>10</y>
+       <width>191</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Tracert</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_action_ping">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>171</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Ping</string>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="pag_ping">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>330</y>
+       <width>381</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_7"/>
+     <widget class="QWidget" name="page_5">
+      <widget class="QLineEdit" name="txt_ping_ping">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>60</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>65</y>
+         <width>55</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ping/URL:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ping_action_ping">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>60</y>
+         <width>93</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hacer Ping</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="consola_resultados">
+       <property name="geometry">
+        <rect>
+         <x>-7</x>
+         <y>106</y>
+         <width>381</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_6"/>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2"/>
+   <widget class="QWidget" name="page_3"/>
+   <widget class="QWidget" name="page_4"/>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>0</y>
+     <width>20</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>20</width>
+     <height>631</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-left-color: rgb(0, 0, 127);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
